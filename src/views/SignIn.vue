@@ -13,7 +13,7 @@
           <div class="card z-index-0 fadeIn3 fadeInBottom">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
+                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">登录</h4>
                 <div class="row mt-3 d-flex justify-content-center align-items-center">
                   <div class="col-4 text-center px-1">
                     <a
@@ -29,21 +29,19 @@
             <div class="card-body">
               <form role="form" class="text-start mt-3">
                 <div class="mb-3">
-                  <material-input id="email" type="email" label="Email" name="email" />
+                  <material-input id="account" type="account" label="手机号码/邮箱/昵称" name="account" />
                 </div>
                 <div class="mb-3">
-                  <material-input id="password" type="password" label="Password" name="password" />
+                  <material-input id="password" type="password" label="密码" name="password" />
                 </div>
-                <material-switch id="rememberMe" name="rememberMe">Remember me</material-switch>
+                <material-switch id="rememberMe" name="rememberMe">记住密码</material-switch>
                 <div class="text-center">
-                  <material-button class="my-4 mb-2" variant="gradient" color="success" fullWidth
-                    >Sign in</material-button
-                  >
+                  <material-button class="my-4 mb-2" variant="gradient" color="success" fullWidth>登录</material-button>
                 </div>
                 <p class="mt-4 text-sm text-center">
-                  Don't have an account?
+                  还没有账号?
                   <router-link :to="{name: 'SignUp'}" class="text-success text-gradient font-weight-bold"
-                    >Sign up</router-link
+                    >注册</router-link
                   >
                 </p>
               </form>

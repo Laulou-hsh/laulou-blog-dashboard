@@ -1,8 +1,5 @@
 <template>
   <div class="alert text-white" role="alert" :class="getClasses(color, dismissible)">
-    <span class="alert-icon">
-      <i :class="getIcon(icon)" />
-    </span>
     <span class="alert-text">
       {{ icon && '&nbsp;' }}
       <slot />
@@ -40,8 +37,6 @@ function getClasses(color, dismissible) {
   const dismissibleValue = dismissible ? 'alert-dismissible fade show' : null
   return `${colorValue} ${dismissibleValue}`
 }
-
-const getIcon = (icon) => {
-  return icon ? icon : null
-}
 </script>
+
+<style scoped></style>

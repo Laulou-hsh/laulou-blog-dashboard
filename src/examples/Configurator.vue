@@ -151,6 +151,6 @@ onBeforeMount(() => {
   border: 1px solid transparent !important;
 }
 .fixed-plugin-button {
-  bottom: 220px !important;
+  bottom: 50px !important;
 }
 </style>

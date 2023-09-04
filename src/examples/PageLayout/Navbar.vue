@@ -10,7 +10,7 @@
         v-bind="$attrs"
         :class="isBlur ? 'text-dark' : 'text-white'"
       >
-        Material Dashboard 2
+        捞佬博客管理后台
       </router-link>
       <button
         class="navbar-toggler shadow-none ms-2"
@@ -36,13 +36,13 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Dashboard
+              面板
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link me-2" to="/profile">
               <i class="fa fa-user opacity-6 me-1" aria-hidden="true" :class="isBlur ? 'text-dark' : 'text-white'"></i>
-              Profile
+              个人信息
             </router-link>
           </li>
           <li class="nav-item">
@@ -52,13 +52,13 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Sign Up
+              登录
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link me-2" to="/sign-in">
               <i class="fas fa-key opacity-6 me-1" aria-hidden="true" :class="isBlur ? 'text-dark' : 'text-white'"></i>
-              Sign In
+              注册
             </router-link>
           </li>
         </ul>
