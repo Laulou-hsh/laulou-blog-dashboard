@@ -5,17 +5,18 @@
     id="navbarBlur"
     data-scroll="true"
     :class="isAbsolute ? 'mt-4' : 'mt-0'"
+    style="position: sticky"
   >
     <div class="px-3 py-1 container-fluid">
       <breadcrumbs :currentPage="currentRouteName" :color="color" />
       <div class="mt-2 collapse navbar-collapse mt-sm-0 me-md-0 me-sm-4" id="navbar">
         <div class="pe-md-3 d-flex align-items-center ms-md-auto">
-          <material-input id="search" label="Search here" />
+          <material-input id="search" label="搜索" />
         </div>
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item d-flex align-items-center">
             <router-link
-              :to="{name: 'SignIn'}"
+              :to="{name: 'Profile'}"
               class="px-0 nav-link font-weight-bold lh-1"
               :class="color ? color : 'text-body'"
             >
@@ -150,6 +151,7 @@ import {storeToRefs} from 'pinia'
 import MaterialInput from '@/components/MaterialInput.vue'
 import Breadcrumbs from '../Breadcrumbs.vue'
 import {useAppStore} from '@/store/index.js'
+import {ROUTE_NAME_MAP} from '@/config/route.js'
 
 const props = defineProps(['minNav', 'color'])
 const store = useAppStore()
@@ -168,6 +170,6 @@ function toggleSidebar() {
 }
 
 const currentRouteName = computed(() => {
-  return route.name
+  return ROUTE_NAME_MAP[route.name]
 })
 </script>

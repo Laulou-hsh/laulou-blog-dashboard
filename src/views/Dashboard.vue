@@ -11,8 +11,8 @@
             :icon="icon"
           />
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-4 col-md-6 mt-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-6">
             <ChartHolderCard
               title="Website Views"
               subtitle="Last Campaign Performance"
@@ -29,7 +29,7 @@
               />
             </ChartHolderCard>
           </div>
-          <div class="col-lg-4 col-md-6 mt-4">
+          <div class="col-lg-4 col-md-6 mt-6">
             <ChartHolderCard
               title="Daily Sales"
               subtitle="(<span class='font-weight-bolder'>+15%</span>) increase in today sales."
@@ -47,7 +47,7 @@
               />
             </ChartHolderCard>
           </div>
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-6">
             <ChartHolderCard
               title="Completed Tasks"
               subtitle="Last Campaign Performance"

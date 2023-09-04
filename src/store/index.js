@@ -23,6 +23,7 @@ export const useAppStore = defineStore({
     toggleConfigurator() {
       this.showConfig = !this.showConfig
     },
+
     navbarMinimize() {
       const sidenav_show = document.querySelector('.g-sidenav-show')
 
@@ -34,6 +35,7 @@ export const useAppStore = defineStore({
         this.isPinned = false
       }
     },
+
     navbarFixed() {
       if (this.isNavFixed === false) {
         this.isNavFixed = true
@@ -41,14 +43,21 @@ export const useAppStore = defineStore({
         this.isNavFixed = false
       }
     },
+
+    toggleSidenav() {
+      this.showSidenav = !this.showSidenav
+    },
+
     toggleEveryDisplay() {
       this.showNavbar = !this.showNavbar
       this.showSidenav = !this.showSidenav
       this.showFooter = !this.showFooter
     },
+
     toggleHideConfig() {
       this.hideConfigButton = !this.hideConfigButton
     },
+
     setColor(payload) {
       this.color = payload
     },

@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "url": "dashboard",
+      "collapse": false,
+      "icon": "dashboard"
+    },
+    {
+      "url": "tables",
+      "collapse": false,
+      "icon": "table_view"
+    },
+    {
+      "url": "article",
+      "collapse": false,
+      "icon": "article"
+    },
+    {
+      "url": "billing",
+      "collapse": false,
+      "icon": "receipt_long"
+    },
+    {
+      "url": "notifications",
+      "collapse": false,
+      "icon": "notifications"
+    },
+    {
+      "url": "profile",
+      "collapse": false,
+      "icon": "person"
+    },
+    {
+      "url": "sign-in",
+      "collapse": false,
+      "icon": "login"
+    },
+    {
+      "url": "sign-up",
+      "collapse": false,
+      "icon": "assignment"
+    }
+  ]
+}

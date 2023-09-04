@@ -15,6 +15,16 @@ const routes = [
     redirect: '/sign-in',
   },
   {
+    path: '/index',
+    name: 'Index',
+    redirect: '/sign-in',
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    redirect: '/sign-in',
+  },
+  {
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard,
