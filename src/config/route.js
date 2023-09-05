@@ -9,6 +9,7 @@ export const ROUTE = {
   PROFILE: 'profile',
   SIGNIN: 'sign-in',
   SIGNUP: 'sign-up',
+  LOGOUT: 'logout',
 }
 
 export const ROUTE_TEXT_MAP = {
@@ -22,6 +23,7 @@ export const ROUTE_TEXT_MAP = {
   [ROUTE.PROFILE]: '个人中心',
   [ROUTE.SIGNIN]: '登录',
   [ROUTE.SIGNUP]: '注册',
+  [ROUTE.LOGOUT]: '退出登录',
 }
 
 export const ROUTE_NAME = {
@@ -35,6 +37,7 @@ export const ROUTE_NAME = {
   PROFILE: 'Profile',
   SIGNIN: 'SignIn',
   SIGNUP: 'SignUp',
+  LOGOUT: 'Logout',
 }
 
 export const ROUTE_NAME_MAP = {
@@ -48,4 +51,5 @@ export const ROUTE_NAME_MAP = {
   [ROUTE_NAME.PROFILE]: '个人中心',
   [ROUTE_NAME.SIGNIN]: '登录',
   [ROUTE_NAME.SIGNUP]: '注册',
+  [ROUTE_NAME.LOGOUT]: '退出登录',
 }
