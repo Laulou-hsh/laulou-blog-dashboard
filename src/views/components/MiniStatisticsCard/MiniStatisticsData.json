@@ -7,7 +7,7 @@
       },
       "detail": "<span class='text-success text-sm font-weight-bolder'> +55%</span> than last week",
       "icon": {
-        "name": "weekend",
+        "name": "receipt",
         "color": "text-white",
         "background": "dark"
       }

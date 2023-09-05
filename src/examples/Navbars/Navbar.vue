@@ -5,7 +5,6 @@
     id="navbarBlur"
     data-scroll="true"
     :class="isAbsolute ? 'mt-4' : 'mt-0'"
-    style="position: sticky"
   >
     <div class="px-3 py-1 container-fluid">
       <breadcrumbs :currentPage="currentRouteName" :color="color" />
@@ -38,7 +37,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item d-xl-none d-flex align-items-center">
+          <li class="nav-item d-xl-none d-flex align-items-center ms-2 me-n2">
             <a href="#" @click="toggleSidebar" class="p-0 nav-link text-body lh-1" id="iconNavbarSidenav">
               <div class="sidenav-toggler-inner">
                 <i class="sidenav-toggler-line"></i>

@@ -15,7 +15,6 @@
 
 <script setup>
 import {ref} from 'vue'
-import utils from '@/utils'
 
 const props = defineProps({
   title: {
@@ -44,14 +43,9 @@ const props = defineProps({
     type: Function,
     default: () => {},
   },
-  wait: {
-    type: Number,
-    default: 5000,
-  },
 })
 
 const icon = ref(props.icon)
-const wait = ref(props.wait)
 
 function getColor(color) {
   const colorValue = color === 'white' ? 'bg-white' : `bg-gradient-${color}`
@@ -66,12 +60,4 @@ const getTextColor = (color) => {
   const textColor = color === 'white' ? 'text-white' : 'text-dark'
   return textColor
 }
-
-function delay(wait) {
-  setTimeout(() => {
-    props.closeHandler()
-  }, wait)
-}
-
-utils.debounce(delay(wait.value), wait.value)
 </script>

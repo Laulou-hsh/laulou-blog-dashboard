@@ -29,7 +29,7 @@
             <div class="card-body">
               <form role="form" class="text-start mt-3">
                 <div class="mb-3">
-                  <material-input id="account" type="account" label="手机号码/邮箱/昵称" name="account" />
+                  <material-input id="account" type="account" label="邮箱/昵称" name="account" />
                 </div>
                 <div class="mb-3">
                   <material-input id="password" type="password" label="密码" name="password" />

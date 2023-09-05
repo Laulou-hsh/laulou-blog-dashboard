@@ -14,7 +14,6 @@
     <main class="mt-0 main-content">
       <section>
         <div class="page-header min-vh-100">
-          <!-- <div class="container"> -->
           <div class="container pt-8" style="height: 100vh; width: 100vw">
             <div class="row h-100 w-100">
               <div
@@ -30,38 +29,36 @@
               <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
                 <div class="card card-plain">
                   <div class="pb-0 card-header bg-transparent mb-4">
-                    <h4 class="font-weight-bolder">Sign In</h4>
-                    <p class="mb-0">Enter your email and password to register</p>
+                    <h4 class="font-weight-bolder">注册</h4>
+                    <p class="mb-0">输入昵称和邮箱注册</p>
                   </div>
                   <div class="card-body">
                     <form role="form">
                       <div class="mb-3">
-                        <material-input id="name" type="text" label="Name" name="name" size="lg" />
+                        <material-input id="name" type="text" label="昵称" name="name" size="lg" />
                       </div>
                       <div class="mb-3">
-                        <material-input id="email" type="email" label="Email" name="email" size="lg" />
+                        <material-input id="email" type="email" label="邮箱" name="email" size="lg" />
                       </div>
                       <div class="mb-3">
-                        <material-input id="password" type="password" label="Password" name="password" size="lg" />
+                        <material-input id="password" type="password" label="密码" name="password" size="lg" />
                       </div>
                       <material-checkbox id="flexCheckDefault" class="font-weight-light" checked>
-                        I agree the
-                        <a href="../../../pages/privacy.html" class="text-dark font-weight-bolder"
-                          >Terms and Conditions</a
-                        >
+                        我同意
+                        <a href="#" class="text-dark font-weight-bolder">隐私政策</a>
                       </material-checkbox>
                       <div class="text-center">
                         <material-button class="mt-4" variant="gradient" color="success" fullWidth size="lg"
-                          >Sign Up</material-button
+                          >注册</material-button
                         >
                       </div>
                     </form>
                   </div>
                   <div class="px-1 pt-0 text-center card-footer px-lg-2">
                     <p class="mx-auto mb-4 text-sm">
-                      Don't have an account?
+                      已经有账号？
                       <router-link :to="{name: 'SignIn'}" class="text-success text-gradient font-weight-bold"
-                        >Sign In</router-link
+                        >登录</router-link
                       >
                     </p>
                   </div>

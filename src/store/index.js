@@ -8,6 +8,8 @@ export const useAppStore = defineStore({
     showConfig: false,
     sidebarType: 'bg-gradient-dark',
     color: 'success',
+    snackbar: null,
+    showSnackbar: false,
     isNavFixed: false,
     isAbsolute: false,
     showNavs: true,
@@ -60,6 +62,16 @@ export const useAppStore = defineStore({
 
     setColor(payload) {
       this.color = payload
+    },
+
+    setSnackbar(snackbar) {
+      this.snackbar = snackbar
+      this.showSnackbar = true
+    },
+
+    closeSnackbar() {
+      this.snackbar = null
+      this.showSnackbar = false
     },
   },
 })
